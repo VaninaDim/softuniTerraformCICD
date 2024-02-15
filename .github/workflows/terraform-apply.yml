@@ -76,4 +76,4 @@ jobs:
     
     # Terraform apply
     - name: terraform apply
-      run: terraform apply -auto-approve tfplan.tfplan
+      run: terraform apply -auto-approve tfplan
