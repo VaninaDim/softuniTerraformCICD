@@ -1,7 +1,7 @@
 name: 'Terraform plan and apply'
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,7 +16,6 @@ jobs:
   terraform-plan:
     name: 'Terraform plan'
     runs-on: ubuntu-latest
-    environment: production
 
     steps:
     # Checkout the repository to the GitHub Actions runner
